@@ -1,6 +1,7 @@
 import "./style.css";
 import { createHome } from "./home";
 import { createMenu } from "./menu";
+import { createContact } from "./about";
 
 const content = document.getElementById("content");
 
@@ -29,4 +30,13 @@ menuBtn.addEventListener("click", () => {
 
   const menu = createMenu();
   content.appendChild(menu);
+});
+
+contactBtn.addEventListener("click", () => {
+  if (content.firstChild) {
+    content.removeChild(content.firstElementChild);
+  }
+
+  const contact = createContact();
+  content.appendChild(contact);
 });
