@@ -1,5 +1,6 @@
 import "./style.css";
 import { createHome } from "./home";
+import { createMenu } from "./menu";
 
 const content = document.getElementById("content");
 
@@ -21,4 +22,11 @@ homeBtn.addEventListener("click", () => {
   content.appendChild(home);
 });
 
-console.log("Hello");
+menuBtn.addEventListener("click", () => {
+  if (content.firstChild) {
+    content.removeChild(content.firstElementChild);
+  }
+
+  const menu = createMenu();
+  content.appendChild(menu);
+});
