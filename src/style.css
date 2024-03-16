@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: white;
+  font-family: "Architects Daughter", cursive;
+  font-size: 1.6rem;
+  background-image: url(assets/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: rgba(49, 49, 49, 0.226);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  padding-block: 1rem;
+}
+
+h1{
+    font-size: 5rem;
+    font-weight: 600;
+    padding-block:0.5rem 1rem ;
+}
+
+ul {
+  display: flex;
+  gap: 5rem;
+}
+
+li {
+  list-style: none;
+  padding: 1rem 1rem 0.25rem;
+  cursor: pointer;
+}
+
+li:hover {
+    font-weight: 800;
+}
